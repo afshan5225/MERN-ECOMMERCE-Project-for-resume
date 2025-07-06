@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import { Helmet } from 'react-helmet-async'; // note: if you use `react-helmet-async`
 
 const Meta = ({ title, description, keywords }) => {
@@ -19,3 +19,5 @@ Meta.defaultProps = {
 };
 
 export default Meta;
+
+*/
