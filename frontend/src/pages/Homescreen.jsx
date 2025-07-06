@@ -7,7 +7,7 @@ import Message from '../components/Message.jsx';
 import { useParams } from 'react-router-dom';
 import Paginate from '../components/Paginate.jsx';
 import ProductCarousel from '../components/ProductCarousal.jsx';
-import Meta from '../components/Meta.jsx';
+
 
 
 const HomeScreen = () => {
@@ -23,7 +23,7 @@ const HomeScreen = () => {
       {/* ✅ Show Carousel when not searching */}
       {!keyword && <ProductCarousel />}
 
-      <Meta/>
+
 
       <h1>Latest Products</h1>
 
