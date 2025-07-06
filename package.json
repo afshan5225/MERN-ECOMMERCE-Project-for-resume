@@ -1,0 +1,41 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder.js",
+    "data:destroy": "node backend/seeder.js -d",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afshan5225/e-commerce.git"
+  },
+  "author": "Afshan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afshan5225/e-commerce/issues"
+  },
+  "homepage": "https://github.com/afshan5225/e-commerce#readme",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "dotenv": "^16.5.0",
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.2",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.7",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.0",
+    "multer": "^2.0.1",
+    "react-toastify": "^11.0.5"
+  }
+}
