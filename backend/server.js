@@ -3,6 +3,8 @@ import dotenv from "dotenv";
 import path from "path";
 import cookieParser from "cookie-parser";
 import connectDB from "./config/db.js";
+import cors from 'cors';
+
 
 import productRoutes from "./routes/productRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
@@ -19,6 +21,12 @@ connectDB();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+
+app.use(cors({
+  origin: ['http://localhost:5173', 'https://your-frontend-domain.com'],
+  credentials: true
+}));
+
 
 // Middleware
 app.use(express.json()); // for parsing application/json
