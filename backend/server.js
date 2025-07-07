@@ -23,7 +23,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-  origin: [ 'https://vercel.com/muhammed-afshan-anas-projects/mern-ecommerce-project-for-resume-wrzn'],
+  origin: [ 'https://mern-ecommerce-project-for-resume-w.vercel.app'],
   credentials: true, // ✅ Needed for cookies (JWT)
 }));
 
