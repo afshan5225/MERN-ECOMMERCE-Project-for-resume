@@ -23,9 +23,8 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://mern-ecommerce-project-frontend-two.vercel.app/'],
-    credentials: true, 
-  
+  origin: ['http://localhost:5173', 'https://mern-ecommerce-project-frontend-two.vercel.app'],
+  credentials: true, // ✅ Needed for cookies (JWT)
 }));
 
 
